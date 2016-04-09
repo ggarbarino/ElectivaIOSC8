@@ -18,8 +18,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //let data = son los datos que tengo en el array
         
-        let dequeued: AnyObject = tableViewPrueba.dequeueReusableCellWithIdentifier("CeldaPrueba", forIndexPath: indexPath)
-        let cell = dequeued as! UITableViewCell
+        let dequeued = tableView.dequeueReusableCellWithIdentifier("CeldaPrueba", forIndexPath: indexPath) as! TableViewCell
+        let cell = dequeued as TableViewCell
+        cell.labelNombre.text = "Nombre de la Celda"
+        cell.labelPrecio.text = "$ 124"
+        cell.imagenCelda.image = UIImage(named: "img-profile-2")
+       
         return cell
     }
     

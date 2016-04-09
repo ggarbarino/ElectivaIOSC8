@@ -18,44 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o4A-wo-S2V">
-                                <rect key="frame" x="125" y="39" width="320" height="504"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="136" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o4A-wo-S2V">
+                                <rect key="frame" x="36" y="39" width="528" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaPrueba" id="tDl-hu-gcS" customClass="TableViewCell" customModule="PracticoDeTabla" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaPrueba" rowHeight="136" id="tDl-hu-gcS" customClass="TableViewCell" customModule="PracticoDeTabla" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="528" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tDl-hu-gcS" id="f0q-40-q1g">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="528" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEb-gE-fRt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEb-gE-fRt">
                                                     <rect key="frame" x="103" y="11" width="62" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-profile-2" translatesAutoresizingMaskIntoConstraints="NO" id="A5a-21-ZbT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drw-kj-XSO">
+                                                    <rect key="frame" x="285" y="11" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5a-21-ZbT">
                                                     <rect key="frame" x="8" y="-42" width="66" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="66" id="N5y-GD-4Ct"/>
                                                         <constraint firstAttribute="height" constant="128" id="aW0-QF-iAb"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drw-kj-XSO">
-                                                    <rect key="frame" x="184" y="11" width="49" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aEb-gE-fRt" secondAttribute="bottom" constant="95" id="3hk-fA-7bE"/>
                                                 <constraint firstItem="A5a-21-ZbT" firstAttribute="leading" secondItem="f0q-40-q1g" secondAttribute="leadingMargin" id="5SB-oo-lyx"/>
-                                                <constraint firstItem="aEb-gE-fRt" firstAttribute="leading" secondItem="f0q-40-q1g" secondAttribute="leadingMargin" constant="95" id="5nK-hC-T03"/>
                                                 <constraint firstItem="aEb-gE-fRt" firstAttribute="top" secondItem="f0q-40-q1g" secondAttribute="topMargin" constant="3" id="H6C-g4-HVg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="drw-kj-XSO" secondAttribute="bottom" constant="95" id="Sb6-6c-TpB"/>
                                                 <constraint firstItem="drw-kj-XSO" firstAttribute="top" secondItem="f0q-40-q1g" secondAttribute="topMargin" constant="3" id="WyL-qE-5MG"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="A5a-21-ZbT" secondAttribute="bottom" constant="-51" id="afg-4A-TTd"/>
-                                                <constraint firstItem="drw-kj-XSO" firstAttribute="leading" secondItem="aEb-gE-fRt" secondAttribute="trailing" constant="19" id="oAl-3C-9jv"/>
+                                                <constraint firstItem="drw-kj-XSO" firstAttribute="leading" secondItem="aEb-gE-fRt" secondAttribute="trailing" constant="120" id="oAl-3C-9jv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -84,7 +85,4 @@
             <point key="canvasLocation" x="421" y="411"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="img-profile-2" width="100" height="100"/>
-    </resources>
 </document>
