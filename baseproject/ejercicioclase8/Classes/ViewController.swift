@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     let user1 = User (nombre: "Walter White", descripcion: "Descripcion de Walter White",nombreImagen: "img-profile")
-    let user2 = User (nombre: "Amigo de Walter White", descripcion: "Descripcion del amio de Walter White",nombreImagen: "img-profile-2")
-    
+    let user2 = User (nombre: "Amigo de Walter White", descripcion: "Descripcion del amgio de Walter White",nombreImagen: "img-profile-2")
+    let user3 = User (nombre: "Amiga Walter White", descripcion: "La noviecita del Walter",nombreImagen: "img-profile-3")
+    let user4 = User (nombre: "Hugo Chavez", descripcion: "Descripcion de Hugo Chavez",nombreImagen: "img-profile-4")
     var lstUsers: [User] = []
     
     @IBOutlet weak var profileImageView: UIImageView!
@@ -26,6 +27,8 @@ class ViewController: UIViewController {
         
         lstUsers.append(user1)
         lstUsers.append(user2)
+        lstUsers.append(user3)
+        lstUsers.append(user4)
     }
 
     override func viewWillAppear(animated: Bool) {
