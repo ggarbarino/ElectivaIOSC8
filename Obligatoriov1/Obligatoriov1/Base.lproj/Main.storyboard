@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="11w-Eh-YGE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Obligatoriov1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gld-S6-403">
+                                <rect key="frame" x="238" y="193" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf2-3o-NBi">
+                                <rect key="frame" x="274" y="296" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8g-OY-K2u">
+                                <rect key="frame" x="383" y="184" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="egz-o0-xrf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-KU-fsz">
+                                <rect key="frame" x="383" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="mju-E4-btx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMY-Ix-OLY">
+                                <rect key="frame" x="318" y="364" width="42" height="30"/>
+                                <state key="normal" title="Entrar"/>
+                                <connections>
+                                    <segue destination="ptX-4O-dea" kind="push" identifier="idLoginOk" id="jC6-6b-t4V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="S3s-KU-fsz" secondAttribute="trailing" constant="100" id="6a4-Qm-vXU"/>
+                            <constraint firstItem="F8g-OY-K2u" firstAttribute="leading" secondItem="gld-S6-403" secondAttribute="trailing" constant="20" id="DFe-Kq-C8i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hMY-Ix-OLY" secondAttribute="trailing" constant="220" id="DMa-Me-Io2"/>
+                            <constraint firstItem="S3s-KU-fsz" firstAttribute="leading" secondItem="Nf2-3o-NBi" secondAttribute="trailing" constant="20" id="ReO-pu-bZD"/>
+                            <constraint firstItem="hMY-Ix-OLY" firstAttribute="top" secondItem="S3s-KU-fsz" secondAttribute="bottom" constant="49" id="Tr6-8x-D2x"/>
+                            <constraint firstItem="Nf2-3o-NBi" firstAttribute="top" secondItem="gld-S6-403" secondAttribute="bottom" constant="82" id="Twq-ig-s1H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F8g-OY-K2u" secondAttribute="trailing" constant="100" id="VNR-dE-hGx"/>
+                            <constraint firstItem="hMY-Ix-OLY" firstAttribute="top" secondItem="Nf2-3o-NBi" secondAttribute="bottom" constant="47" id="fnb-qa-VcT"/>
+                            <constraint firstItem="S3s-KU-fsz" firstAttribute="top" secondItem="F8g-OY-K2u" secondAttribute="bottom" constant="71" id="q8e-uq-Zfz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hMY-Ix-OLY" secondAttribute="bottom" constant="206" id="uR6-AQ-f5H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xPY-Cb-7LM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ifo-GD-NMs">
+            <objects>
+                <viewController id="ptX-4O-dea" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jmd-9w-arv"/>
+                        <viewControllerLayoutGuide type="bottom" id="gRZ-s2-3eW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ilz-ag-xga">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tarjeta_puntos_ds_y_wii" translatesAutoresizingMaskIntoConstraints="NO" id="rw1-IU-N8e">
+                                <rect key="frame" x="180" y="164" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rw1-IU-N8e" firstAttribute="centerX" secondItem="ilz-ag-xga" secondAttribute="centerX" id="ltj-wF-oet"/>
+                            <constraint firstItem="rw1-IU-N8e" firstAttribute="top" secondItem="Jmd-9w-arv" secondAttribute="bottom" constant="100" id="oS8-jn-keW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qU9-py-W0H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6N-zg-VSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uxw-y9-idk">
+            <objects>
+                <navigationController id="11w-Eh-YGE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOI-74-9dQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jg1-Ah-qK3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yiC-vc-ivZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tarjeta_puntos_ds_y_wii" width="150" height="96"/>
+    </resources>
+</document>
