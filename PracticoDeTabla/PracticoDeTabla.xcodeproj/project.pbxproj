@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958F26E81CBF2A9300ECFE01 /* Productos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F26E71CBF2A9300ECFE01 /* Productos.swift */; };
 		95B4F7A31CB87A680040A26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4F7A21CB87A680040A26D /* AppDelegate.swift */; };
 		95B4F7A51CB87A680040A26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4F7A41CB87A680040A26D /* ViewController.swift */; };
 		95B4F7A81CB87A680040A26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B4F7A61CB87A680040A26D /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		958F26E71CBF2A9300ECFE01 /* Productos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Productos.swift; sourceTree = "<group>"; };
 		95B4F79F1CB87A680040A26D /* PracticoDeTabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticoDeTabla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B4F7A21CB87A680040A26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B4F7A41CB87A680040A26D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				95B4F7A91CB87A680040A26D /* Assets.xcassets */,
 				95B4F7AB1CB87A680040A26D /* LaunchScreen.storyboard */,
 				95B4F7AE1CB87A680040A26D /* Info.plist */,
+				958F26E71CBF2A9300ECFE01 /* Productos.swift */,
 			);
 			path = PracticoDeTabla;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B4F7D31CB88AAC0040A26D /* TableViewCell.swift in Sources */,
+				958F26E81CBF2A9300ECFE01 /* Productos.swift in Sources */,
 				95B4F7A51CB87A680040A26D /* ViewController.swift in Sources */,
 				95B4F7A31CB87A680040A26D /* AppDelegate.swift in Sources */,
 			);
@@ -486,6 +490,7 @@
 				95B4F7C91CB87A690040A26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95B4F7CA1CB87A690040A26D /* Build configuration list for PBXNativeTarget "PracticoDeTablaTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				95B4F7CC1CB87A690040A26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95B4F7CD1CB87A690040A26D /* Build configuration list for PBXNativeTarget "PracticoDeTablaUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				95B4F7CF1CB87A690040A26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

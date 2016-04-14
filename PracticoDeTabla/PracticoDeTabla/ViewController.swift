@@ -10,10 +10,19 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("identPrueba", sender: nil)
+    }
     
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
+ 
+    @IBAction func btnAgregar(sender: AnyObject) {
+        
+    }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //let data = son los datos que tengo en el array
@@ -42,6 +51,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
    
     @IBOutlet var tableViewPrueba: UITableView!
-
+    
+    
+    var elementos = 
 }
 
