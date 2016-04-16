@@ -8,24 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController  {
+class ViewControllerTarjeta: UIViewController {
     
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-    @IBAction func btnEntrar(sender: AnyObject) {
-        self.performSegueWithIdentifier("idLoginOk", sender: nil)
+    
+    @IBAction func btnCupones(sender: AnyObject) {
+        self.performSegueWithIdentifier("idVerCupones", sender: nil)
     }
-}
 
+}

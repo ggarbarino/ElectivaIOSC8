@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95EEA54F1CC1AB7900467037 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA54E1CC1AB7900467037 /* TableViewCell.swift */; };
+		95EEA5531CC1B8AE00467037 /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5521CC1B8AE00467037 /* Producto.swift */; };
+		95EEA5551CC1C56100467037 /* TableViewTarjeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */; };
+		95EEA5571CC1C63A00467037 /* TableViewProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5561CC1C63A00467037 /* TableViewProductos.swift */; };
 		95F45EAB1CC0479500D8403F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAA1CC0479500D8403F /* AppDelegate.swift */; };
 		95F45EAD1CC0479500D8403F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAC1CC0479500D8403F /* ViewController.swift */; };
 		95F45EB01CC0479500D8403F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EAE1CC0479500D8403F /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95EEA54E1CC1AB7900467037 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		95EEA5521CC1B8AE00467037 /* Producto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
+		95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTarjeta.swift; sourceTree = "<group>"; };
+		95EEA5561CC1C63A00467037 /* TableViewProductos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewProductos.swift; sourceTree = "<group>"; };
 		95F45EA71CC0479500D8403F /* Obligatoriov1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obligatoriov1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F45EAA1CC0479500D8403F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95F45EAC1CC0479500D8403F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +108,11 @@
 				95F45EAA1CC0479500D8403F /* AppDelegate.swift */,
 				95F45EAC1CC0479500D8403F /* ViewController.swift */,
 				95F45EAE1CC0479500D8403F /* Main.storyboard */,
+				95EEA5561CC1C63A00467037 /* TableViewProductos.swift */,
+				95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */,
+				95EEA54E1CC1AB7900467037 /* TableViewCell.swift */,
 				95F45EB11CC0479500D8403F /* Assets.xcassets */,
+				95EEA5521CC1B8AE00467037 /* Producto.swift */,
 				95F45EB31CC0479500D8403F /* LaunchScreen.storyboard */,
 				95F45EB61CC0479500D8403F /* Info.plist */,
 			);
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EEA54F1CC1AB7900467037 /* TableViewCell.swift in Sources */,
+				95EEA5531CC1B8AE00467037 /* Producto.swift in Sources */,
 				95F45EAD1CC0479500D8403F /* ViewController.swift in Sources */,
+				95EEA5551CC1C56100467037 /* TableViewTarjeta.swift in Sources */,
 				95F45EAB1CC0479500D8403F /* AppDelegate.swift in Sources */,
+				95EEA5571CC1C63A00467037 /* TableViewProductos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +498,7 @@
 				95F45ED11CC0479600D8403F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F45ED21CC0479600D8403F /* Build configuration list for PBXNativeTarget "Obligatoriov1Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				95F45ED41CC0479600D8403F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F45ED51CC0479600D8403F /* Build configuration list for PBXNativeTarget "Obligatoriov1UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				95F45ED71CC0479600D8403F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
