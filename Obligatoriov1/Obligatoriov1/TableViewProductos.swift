@@ -13,7 +13,7 @@ class ViewControllerProductos: UIViewController, UITableViewDelegate, UITableVie
     
     
     let producto1 = Producto (descuento: "Descuento del 90%", nombre: "En cualquier Restoran", imagen: "35194")
-    let producto2 = Producto (descuento: "Descuento del 40%", nombre: "En cualquier Local de Comida Rapida", imagen: "35194")
+    let producto2 = Producto (descuento: "Descuento del 40%", nombre: "En cualquier Local de Comida", imagen: "35194")
     let producto3 = Producto (descuento: "Descuento del 60%", nombre: "En Pizzas", imagen: "35194")
     var lstProductos: [Producto] = []
     
@@ -52,7 +52,9 @@ class ViewControllerProductos: UIViewController, UITableViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("idVerCupon", sender: nil)
+    }
   
 }
 

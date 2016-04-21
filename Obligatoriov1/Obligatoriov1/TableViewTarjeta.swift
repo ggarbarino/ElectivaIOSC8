@@ -22,10 +22,16 @@ class ViewControllerTarjeta: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-  
+    var cambio : Int = 1
     @IBOutlet var btnCambio: UIButton!
     @IBAction func btnTarjeta(sender: AnyObject) {
-   //     btnCambio.setImage(, forState: nil)
+        if (cambio == 1){
+        btnCambio.setImage(UIImage (named: "codigoqr"), forState: .Normal)
+        cambio = 2
+        }else{
+            btnCambio.setImage(UIImage (named: "tarjeta_puntos_ds_y_wii"), forState: .Normal)
+            cambio = 1
+        }
     }
 
 }
