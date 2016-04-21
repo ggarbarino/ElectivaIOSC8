@@ -8,12 +8,28 @@
 
 import UIKit
 
-class ViewControllerTarjeta: UIViewController {
+class HomeViewController: UIViewController {
     
+    let defaults = NSUserDefaults.standardUserDefaults()
     
+    @IBOutlet weak var tarjeta: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        var email = defaults.stringForKey("Email")
+        
+        var password = defaults.stringForKey("Password")
+        
+        
+        
+        if email == nil || password == nil{
+            
+            self.performSegueWithIdentifier("toLogin", sender: nil)
+            
+        }
 
     }
     

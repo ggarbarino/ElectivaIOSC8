@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		95EEA54F1CC1AB7900467037 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA54E1CC1AB7900467037 /* TableViewCell.swift */; };
 		95EEA5531CC1B8AE00467037 /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5521CC1B8AE00467037 /* Producto.swift */; };
-		95EEA5551CC1C56100467037 /* TableViewTarjeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */; };
+		95EEA5551CC1C56100467037 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5541CC1C56100467037 /* HomeViewController.swift */; };
 		95EEA5571CC1C63A00467037 /* TableViewProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5561CC1C63A00467037 /* TableViewProductos.swift */; };
 		95F45EAB1CC0479500D8403F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAA1CC0479500D8403F /* AppDelegate.swift */; };
-		95F45EAD1CC0479500D8403F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAC1CC0479500D8403F /* ViewController.swift */; };
+		95F45EAD1CC0479500D8403F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAC1CC0479500D8403F /* LoginViewController.swift */; };
 		95F45EB01CC0479500D8403F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EAE1CC0479500D8403F /* Main.storyboard */; settings = {ASSET_TAGS = (wearg, ); }; };
 		95F45EB21CC0479500D8403F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EB11CC0479500D8403F /* Assets.xcassets */; };
 		95F45EB51CC0479500D8403F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EB31CC0479500D8403F /* LaunchScreen.storyboard */; };
@@ -40,11 +40,11 @@
 /* Begin PBXFileReference section */
 		95EEA54E1CC1AB7900467037 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		95EEA5521CC1B8AE00467037 /* Producto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
-		95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTarjeta.swift; sourceTree = "<group>"; };
+		95EEA5541CC1C56100467037 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		95EEA5561CC1C63A00467037 /* TableViewProductos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewProductos.swift; sourceTree = "<group>"; };
 		95F45EA71CC0479500D8403F /* Obligatoriov1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obligatoriov1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F45EAA1CC0479500D8403F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95F45EAC1CC0479500D8403F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95F45EAC1CC0479500D8403F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95F45EAF1CC0479500D8403F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95F45EB11CC0479500D8403F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F45EB41CC0479500D8403F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				95F45EAA1CC0479500D8403F /* AppDelegate.swift */,
-				95F45EAC1CC0479500D8403F /* ViewController.swift */,
+				95F45EAC1CC0479500D8403F /* LoginViewController.swift */,
 				95F45EAE1CC0479500D8403F /* Main.storyboard */,
 				95EEA5561CC1C63A00467037 /* TableViewProductos.swift */,
-				95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */,
+				95EEA5541CC1C56100467037 /* HomeViewController.swift */,
 				95EEA54E1CC1AB7900467037 /* TableViewCell.swift */,
 				95F45EB11CC0479500D8403F /* Assets.xcassets */,
 				95EEA5521CC1B8AE00467037 /* Producto.swift */,
@@ -273,8 +273,8 @@
 			files = (
 				95EEA54F1CC1AB7900467037 /* TableViewCell.swift in Sources */,
 				95EEA5531CC1B8AE00467037 /* Producto.swift in Sources */,
-				95F45EAD1CC0479500D8403F /* ViewController.swift in Sources */,
-				95EEA5551CC1C56100467037 /* TableViewTarjeta.swift in Sources */,
+				95F45EAD1CC0479500D8403F /* LoginViewController.swift in Sources */,
+				95EEA5551CC1C56100467037 /* HomeViewController.swift in Sources */,
 				95F45EAB1CC0479500D8403F /* AppDelegate.swift in Sources */,
 				95EEA5571CC1C63A00467037 /* TableViewProductos.swift in Sources */,
 			);
