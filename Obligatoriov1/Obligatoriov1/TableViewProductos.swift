@@ -12,13 +12,14 @@ class ViewControllerProductos: UIViewController, UITableViewDelegate, UITableVie
     
     
     
-    let producto1 = Producto (descuento: "Descuento del 20%", nombre: "En cualquier Restoran", imagen: "35194")
+    let producto1 = Producto (descuento: "Descuento del 90%", nombre: "En cualquier Restoran", imagen: "35194")
     let producto2 = Producto (descuento: "Descuento del 40%", nombre: "En cualquier Local de Comida Rapida", imagen: "35194")
     let producto3 = Producto (descuento: "Descuento del 60%", nombre: "En Pizzas", imagen: "35194")
     var lstProductos: [Producto] = []
     
     
     
+
     @IBOutlet var tablaProductos: UITableView!
     
     override func viewDidLoad() {
@@ -39,9 +40,9 @@ class ViewControllerProductos: UIViewController, UITableViewDelegate, UITableVie
         
         let dequeued = tableView.dequeueReusableCellWithIdentifier("celdaProductos", forIndexPath: indexPath) as! TableViewCell
         let cell = dequeued as TableViewCell
-        cell.labelNombre.text = lstProductos[indexPath.section].nombre
-        cell.labelDescuento.text = lstProductos[indexPath.section].descuento
-        cell.nombreImagen.image = UIImage(named: lstProductos[indexPath.section].imagen)
+        cell.labelNombre.text = lstProductos[indexPath.row].nombre
+        cell.labelDescuento.text = lstProductos[indexPath.row].descuento
+        cell.nombreImagen.image = UIImage(named: lstProductos[indexPath.row].imagen)
         
         return cell
     }

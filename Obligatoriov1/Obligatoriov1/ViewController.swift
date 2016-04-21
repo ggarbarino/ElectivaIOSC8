@@ -25,7 +25,7 @@ class ViewController: UIViewController  {
 
 
     @IBAction func btnEntrar(sender: AnyObject) {
-        self.performSegueWithIdentifier("idLoginOk", sender: nil)
+        self.performSegueWithIdentifier("idPantallaPpal", sender: nil)
     }
 }
 

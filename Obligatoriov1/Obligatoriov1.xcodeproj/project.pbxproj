@@ -13,7 +13,7 @@
 		95EEA5571CC1C63A00467037 /* TableViewProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5561CC1C63A00467037 /* TableViewProductos.swift */; };
 		95F45EAB1CC0479500D8403F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAA1CC0479500D8403F /* AppDelegate.swift */; };
 		95F45EAD1CC0479500D8403F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EAC1CC0479500D8403F /* ViewController.swift */; };
-		95F45EB01CC0479500D8403F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EAE1CC0479500D8403F /* Main.storyboard */; };
+		95F45EB01CC0479500D8403F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EAE1CC0479500D8403F /* Main.storyboard */; settings = {ASSET_TAGS = (wearg, ); }; };
 		95F45EB21CC0479500D8403F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EB11CC0479500D8403F /* Assets.xcassets */; };
 		95F45EB51CC0479500D8403F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F45EB31CC0479500D8403F /* LaunchScreen.storyboard */; };
 		95F45EC01CC0479500D8403F /* Obligatoriov1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F45EBF1CC0479500D8403F /* Obligatoriov1Tests.swift */; };
@@ -199,6 +199,9 @@
 		95F45E9F1CC0479500D8403F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					wearg,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = SP07;

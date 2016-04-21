@@ -22,8 +22,10 @@ class ViewControllerTarjeta: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnCupones(sender: AnyObject) {
-        self.performSegueWithIdentifier("idVerCupones", sender: nil)
+  
+    @IBOutlet var btnCambio: UIButton!
+    @IBAction func btnTarjeta(sender: AnyObject) {
+   //     btnCambio.setImage(, forState: nil)
     }
 
 }
