@@ -19,7 +19,7 @@ class ViewControllerProductos: UIViewController, UITableViewDelegate, UITableVie
     
     
     
-
+    var cuponAMandar : String = ""
     @IBOutlet var tablaProductos: UITableView!
     
     override func viewDidLoad() {
@@ -53,8 +53,17 @@ class ViewControllerProductos: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        cuponAMandar = lstProductos[indexPath.row].nombre
         self.performSegueWithIdentifier("idVerCupon", sender: nil)
     }
-  
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier=="idVerCupon"){
+            let siguienteVC = segue.destinationViewController as! ViewControllerCupon
+            siguienteVC.cupon = cuponAMandar
+        }
+        
+    }
 }
 

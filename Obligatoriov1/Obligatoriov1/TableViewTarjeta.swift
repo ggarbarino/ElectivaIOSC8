@@ -11,10 +11,15 @@ import UIKit
 class ViewControllerTarjeta: UIViewController {
     
     
-    
+    let defaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let email = defaults.stringForKey("Email")
+        let password = defaults.stringForKey("Password")
+        
+        if email == nil || password == nil{
+            self.performSegueWithIdentifier("toLogin", sender: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,3 +40,4 @@ class ViewControllerTarjeta: UIViewController {
     }
 
 }
+

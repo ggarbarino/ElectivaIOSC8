@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95B3D11E1CCAE88000D265AB /* TableViewCupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B3D11D1CCAE87F00D265AB /* TableViewCupon.swift */; };
+		95B3D1201CCAF75000D265AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B3D11F1CCAF74F00D265AB /* LoginViewController.swift */; };
 		95EC31461CC98C1C00EC8767 /* ProductosCargados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EC31451CC98C1C00EC8767 /* ProductosCargados.swift */; };
 		95EEA54F1CC1AB7900467037 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA54E1CC1AB7900467037 /* TableViewCell.swift */; };
 		95EEA5531CC1B8AE00467037 /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EEA5521CC1B8AE00467037 /* Producto.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95B3D11D1CCAE87F00D265AB /* TableViewCupon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCupon.swift; sourceTree = "<group>"; };
+		95B3D11F1CCAF74F00D265AB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95EC31451CC98C1C00EC8767 /* ProductosCargados.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductosCargados.swift; path = ../ProductosCargados.swift; sourceTree = "<group>"; };
 		95EEA54E1CC1AB7900467037 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		95EEA5521CC1B8AE00467037 /* Producto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
@@ -108,8 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				95EC31451CC98C1C00EC8767 /* ProductosCargados.swift */,
+				95B3D11D1CCAE87F00D265AB /* TableViewCupon.swift */,
 				95F45EAA1CC0479500D8403F /* AppDelegate.swift */,
 				95F45EAC1CC0479500D8403F /* ViewController.swift */,
+				95B3D11F1CCAF74F00D265AB /* LoginViewController.swift */,
 				95F45EAE1CC0479500D8403F /* Main.storyboard */,
 				95EEA5561CC1C63A00467037 /* TableViewProductos.swift */,
 				95EEA5541CC1C56100467037 /* TableViewTarjeta.swift */,
@@ -274,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B3D1201CCAF75000D265AB /* LoginViewController.swift in Sources */,
 				95EEA54F1CC1AB7900467037 /* TableViewCell.swift in Sources */,
 				95EEA5531CC1B8AE00467037 /* Producto.swift in Sources */,
 				95F45EAD1CC0479500D8403F /* ViewController.swift in Sources */,
@@ -281,6 +288,7 @@
 				95F45EAB1CC0479500D8403F /* AppDelegate.swift in Sources */,
 				95EC31461CC98C1C00EC8767 /* ProductosCargados.swift in Sources */,
 				95EEA5571CC1C63A00467037 /* TableViewProductos.swift in Sources */,
+				95B3D11E1CCAE88000D265AB /* TableViewCupon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
